@@ -1,0 +1,334 @@
+<html>
+    <head>
+        <title>Assessment 3</title>
+
+        <script>
+
+            function Cat() {
+                var displayField = document.getElementById("textField"); //gets the display field
+			    displayField.value = "User clicks Cat"; //sets the text in the display field
+
+                document.getElementById("result").innerHTML = "Cat is clicked"; //sets the text in the div
+
+                var displayField = document.getElementById("pic"); //gets the display area
+			    displayField.src = "images/cat.jpg"; //sets the image src
+            }
+            function Dog() {
+                var displayField = document.getElementById("textField"); //gets the display field
+			    displayField.value = "User clicks Dog"; //sets the text in the display field
+
+                document.getElementById("result").innerHTML = "Dog is clicked"; //sets the text in the div
+
+                var displayField = document.getElementById("pic"); //gets the display area
+			    displayField.src = "images/dog.jpg"; //sets the image src
+            }
+            function Frog() {
+                var displayField = document.getElementById("textField"); //gets the display field
+			    displayField.value = "User clicks Frog"; //sets the text in the display field
+
+                document.getElementById("result").innerHTML = "Frog is clicked"; //sets the text in the div
+
+                var displayField = document.getElementById("pic"); //gets the display area
+			    displayField.src = "images/frog.jpg"; //sets the image src
+            }
+
+        </script>
+
+        <style>
+            #label {
+                color: royalblue;
+                text-align: center;
+            }
+
+            hr {
+                height: 2.5px;
+                background-color: #1b1b1e;
+            }
+
+            /* Task 1 Styles*/
+            h1 {
+                color: #1b1b1e;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+            }
+            
+            h2 {
+                color: #666666;
+                text-align: center;
+                font-family: monospace;
+            }
+
+            h3 {
+                color: #373f51;
+                text-align: center;
+                font-family: 'Brush Script MT', cursive;
+            }
+
+            #task1 {
+                width: auto;
+                background-color: #EDE6E3;
+                border: 7px;
+                border-style: double;
+                border-collapse: collapse;
+                margin: auto 25px;
+            }
+
+            /* Task 2 Styles*/
+            #task2Table {
+                border-style: none;
+                border-collapse: collapse;
+                border-spacing: 10px;
+                /*These keep the table centred in the page while it is being resized*/
+                margin-left: auto; 
+                margin-right: auto;
+                font-family: monospace;
+                color: #1b1b1e;
+                width: 95%;
+            }
+
+            #task2Table th, td{
+                padding: 6px 8px 8px;
+                border-style: double;
+                border-width: 3px;
+            }
+
+            #task2headerRow {
+                background-color: #23b5d3;
+                color: #1b1b1e;
+                text-align: justify;
+            }
+
+            tr.row {
+                background-color: #EDE6E3;
+            }
+            tr.altRow {
+                background-color: #aaaaaa;
+            }
+
+            /* Task 3 Styles */
+            #task3Table {
+                align-self: center;
+                border-style: none;
+                border-collapse: collapse;
+                border-spacing: 10px;
+                /*These keep the table centred in the page while it is being resized*/
+                margin-left: auto; 
+                margin-right: auto;
+                font-family: 'Montserrat', sans-serif;
+                color: #1b1b1e;
+                width: 95%;
+            }
+
+            #task3Table th, td {
+                padding: 6px 8px 8px;
+                border-style: solid;
+                border-width: 3px;
+                text-align: center;
+            }
+
+            #task3headerRow {
+                background-color: #23b5d3;
+                color: #1b1b1e;
+                text-align: justify;
+            }
+
+            #row {
+                background-color: #EDE6E3;
+            }
+            #altRow {
+                background-color: #aaaaaa;
+            }
+
+
+            /* Task 4 Styles*/
+            #task4 {
+                width: auto;
+                background-color: #EDE6E3;
+                border: 7px;
+                border-style: double;
+                border-collapse: collapse;
+                margin: auto 25px;
+            }
+
+            button {
+                background-color: #666666bd;
+                color: #1B1B1E;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #373f51dc;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="label">Task 1</h1>
+        <div id="task1">
+            <h1>5081671 Mitchell Prior</h1>
+            <h2>COMP804: Web Security</h2>
+            <h3>Assessment 3, Due March 6th 2023</h3>
+        </div>
+
+        <hr>
+
+        <h1 id="label">Task 2</h1>
+        <table id="task2Table">
+            <tr id="task2headerRow">
+                <th width="70%">Activity</th>
+                <th width="30%">Date</th>
+            </tr>
+
+            <tr class="row">
+                <td style="text-align: left;">First day to enrol for re-enrolling (continuing students)</td>
+                <td style="text-align: left;">21 Nov 2022</td>
+            </tr>
+            <tr class="altRow">
+                <td style="text-align: left;">First day to enrol for re-enrolling (continuing students)</td>
+                <td style="text-align: left;">05 Dec 2022</td>
+            </tr>
+            <tr class="row">
+                <td style="text-align: left;">Orientation</td>
+                <td style="text-align: left;">
+                    <p>20 Feb - 23 Feb 2023</p>
+                    <p>Further information is available on <a href="https://www.uow.edu.au/student/get-started/orientation/" target="_blank">Get Started</a></p>
+                </td>
+            </tr>
+            <tr class="altRow">
+                <td style="text-align: left;">Lectures Commence (weeks 1-6)</td>
+                <td style="text-align: left;">27 Feb - 07 Apr 2023</td>
+            </tr>
+            <tr class="row">
+                <td style="text-align: left;">Last Day to enrol / add subjects yourself</td>
+                <td style="text-align: left;">10 Mar 2023</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h1 id="label">Task 3</h1>
+        <table id="task3Table">
+            <tr id="task3headerRow">
+                <th width="70%">Name</th>
+                <th width="30%">Health Benefit</th>
+            </tr>
+
+            <tr id="row">
+                <td>
+                    <p>Lychee</p>
+                    <img src="images/lychee.png" width="250px">
+                </td>
+                <td>
+                    <p>Rich in Vitamin C</p>
+                    <a href="https://en.wikipedia.org/wiki/Lychee#Nutrients" target="_blank">Wikipedia: Lychee</a>
+                </td>
+            </tr>
+            <tr id="altRow">
+                <td>
+                    <p>Blueberry</p>
+                    <img src="images/blueberry.png" width="250px">
+                </td>
+                <td>
+                    <p>Provides a moderate amount of dietary mineral Manganese, Vitamin C, Vitamin K and dietary fiber</p>
+                    <a href="https://en.wikipedia.org/wiki/Blueberry#Nutrients" target="_blank">Wikipedia: Blueberry</a>
+                </td>
+            </tr>
+            <tr id="row">
+                <td>
+                    <p>Green Bean</p>
+                    <img src="images/green-beans.png" width="250px">
+                </td>
+                <td>
+                    <p>Provides a moderate amount Vitamin C, Vitamin K, Vitamin B6 and Manganese</p>
+                    <a href="https://en.wikipedia.org/wiki/Green_bean#Nutrition" target="_blank">Wikipedia: Green bean</a>
+                </td>
+            </tr>
+            <tr id="altRow">
+                <td>
+                    <p>Broccoli</p>
+                    <img src="images/broccoli.png" width="250px">
+                </td>
+                <td>
+                    <p>Rich source of Vitamin C and Vitamin K</p>
+                    <a href="https://en.wikipedia.org/wiki/Broccoli#Nutrition" target="_blank">Wikipedia: Broccoli</a>
+                </td>
+            </tr>
+            <tr id="row">
+                <td>
+                    <p>Capsicum (Bell pepper)</p>
+                    <img src="images/capsicum.png" width="250px">
+                </td>
+                <td>
+                    <p>Rich source of Vitamin C, Vitamin A and Vitamin B6. Moderate source of Riboflavin, Folate and Vitamin E</p>
+                    <a href="https://en.wikipedia.org/wiki/Bell_pepper#Nutrition" target="_blank">Wikipedia: Capscium (Bell pepper)</a>
+                </td>
+            </tr>
+            <tr id="altRow">
+                <td>
+                    <p>Jalapeño</p>
+                    <img src="images/jalapeno.png" width="250px">
+                </td>
+                <td>
+                    <p>A rich source of Vitamin C, Vitamin B6 and Vitamin E</p>
+                    <a href="https://en.wikipedia.org/wiki/Jalape%C3%B1o#Nutrients" target="_blank">Wikipedia: Jalapeño</a>
+                </td>
+            </tr>
+            <tr id="row">
+                <td>
+                    <p>Pumpkin</p>
+                    <img src="images/pumpkin.png" width="250px">
+                </td>
+                <td>
+                    <p>Excellent source of Provitamin A beta-carotene and Vitamin A. Moderate source of Vitamin C</p>
+                    <a href="https://en.wikipedia.org/wiki/Pumpkin#Nutrition" target="_blank">Wikipedia: Pumpkin</a>
+                </td>
+            </tr>
+            <tr id="altRow">
+                <td>
+                    <p>Sweet Potato</p>
+                    <img src="images/sweet-potato.png" width="250px">
+                </td>
+                <td>
+                    <p>Rich source of Vitamin A, Vitamin C, Manganese, and Vitamin B6</p>
+                    <a href="https://en.wikipedia.org/wiki/Sweet_potato#Nutrient_content" target="_blank">Wikipedia: Sweet Potato</a>
+                </td>
+            </tr>
+            <tr id="row">
+                <td>
+                    <p>Apricot</p>
+                    <img src="images/apricot.png" width="250px">
+                </td>
+                <td>
+                    <p>Good source of Vitamin A and high in natural sugar</p>
+                    <a href="https://www.britannica.com/plant/apricot" target="_blank">Encylopedia Britannica: Apricot</a>
+                </td>
+            </tr>
+            <tr id="altRow">
+                <td>
+                    <p>Strawberry</p>
+                    <img src="images/strawberry.png" width="250px">
+                </td>
+                <td>
+                    <p>Rich source of Vitamin C. Good source of Manganese. Modest amount of essential unsaturated fatty acids</p>
+                    <a href="https://en.wikipedia.org/wiki/Strawberry#Nutrients" target="_blank">Wikipedia: Strawberry</a>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h1 id="label">Task 4</h1>
+        <div id="task4">
+            <button onclick="Cat();">Cat</button>   <button onclick="Dog();">Dog</button>   <button onclick="Frog();">Frog</button>
+
+            <p><input id="textField"></p>
+
+            <div id="result"></div>
+
+            <p><img id="pic"></p>
+        </div>
+    </body>
+</html>
